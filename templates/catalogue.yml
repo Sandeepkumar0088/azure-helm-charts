@@ -4,10 +4,10 @@ metadata:
   name: catalogue
 data:
   MONGO       : "true"
-  MONGO_URL   : "mongodb://mongodb-dev.sandeepkumar5427.online:27017/catalogue"
+  MONGO_URL   : "mongodb://mongodb-dev.sandeepkumarpenta.online:27017/catalogue"
   DB_TYPE     : "mongo"
   APP_GIT_URL : "https://github.com/roboshop-devops-project-v3/catalogue"
-  DB_HOST     : "mongodb-dev.sandeepkumar5427.online"
+  DB_HOST     : "mongodb-dev.sandeepkumarpenta.online"
   SCHEMA_FILE : "db/master-data.js"
 ---
 apiVersion: v1
@@ -49,7 +49,7 @@ spec:
     spec:
       containers:
         - name: catalogue
-          image: 012751250483.dkr.ecr.us-east-1.amazonaws.com/catalogue
+          image: roboshop0088.azurecr.io/cart/catalogue
           imagePullPolicy: Always
           lifecycle:
             preStop:

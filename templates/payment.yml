@@ -7,7 +7,7 @@ data:
   CART_PORT: "8080"
   USER_HOST: "user"
   USER_PORT: "8080"
-  AMQP_HOST: "rabbitmq-dev.sandeepkumar5427.online"
+  AMQP_HOST: "rabbitmq-dev.sandeepkumarpenta.online"
   AMQP_USER: "roboshop"
   AMQP_PASS: "roboshop123"
 ---
@@ -49,7 +49,7 @@ spec:
     spec:
       containers:
         - name: payment
-          image: 012751250483.dkr.ecr.us-east-1.amazonaws.com/payment
+          image: roboshop0088.azurecr.io/cart/payment
           imagePullPolicy: Always
           lifecycle:
             preStop:

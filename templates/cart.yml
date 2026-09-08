@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: cart
 data:
-  REDIS_HOST     : "redis-dev.sandeepkumar5427.online"
+  REDIS_HOST     : "redis-dev.sandeepkumarpenta.online"
   CATALOGUE_HOST : "catalogue"
   CATALOGUE_PORT : "8080"
 ---
@@ -45,7 +45,7 @@ spec:
     spec:
       containers:
         - name: cart
-          image: 012751250483.dkr.ecr.us-east-1.amazonaws.com/cart
+          image: roboshop0088.azurecr.io/cart
           imagePullPolicy: Always
           lifecycle:
             preStop:

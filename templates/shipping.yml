@@ -4,9 +4,9 @@ metadata:
   name: shipping
 data:
   CART_ENDPOINT : "cart:8080"
-  DB_HOST       : "mysql-dev.sandeepkumar5427.online"
-  MYSQL_HOST    : "mysql-dev.sandeepkumar5427.online"
-  REDIS_HOST    : "redis-dev.sandeepkumar5427.online"
+  DB_HOST       : "mysql-dev.sandeepkumarpenta.online"
+  MYSQL_HOST    : "mysql-dev.sandeepkumarpenta.online"
+  REDIS_HOST    : "redis-dev.sandeepkumarpenta.online"
   DB_USER       : "root"
   DB_PASS       : "RoboShop@1"
   DB_TYPE       : "mysql"
@@ -50,7 +50,7 @@ spec:
     spec:
       containers:
         - name: shipping
-          image: 012751250483.dkr.ecr.us-east-1.amazonaws.com/shipping
+          image: roboshop0088.azurecr.io/cart/shipping
           imagePullPolicy: Always
           lifecycle:
             preStop:
@@ -107,7 +107,7 @@ spec:
       containers:
         - name: schema
           389841108590:
-          image: 012751250483.dkr.ecr.us-east-1.amazonaws.com/shipping-db-image
+          image: roboshop0088.azurecr.io/cart/shipping-db-image
           envFrom:
             - configMapRef:
                 name: shipping
