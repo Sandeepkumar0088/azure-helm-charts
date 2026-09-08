@@ -65,7 +65,7 @@ spec:
               name: metrics
 
         - name: frontend
-          image: roboshop0088.azurecr.io/cart/frontend
+          image: roboshop0088.azurecr.io/frontend
           imagePullPolicy: Always
           lifecycle:
             preStop:

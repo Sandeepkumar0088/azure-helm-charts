@@ -45,7 +45,7 @@ spec:
     spec:
       containers:
         - name: user
-          image: 012751250483.dkr.ecr.us-east-1.amazonaws.com/user
+          image: roboshop0088.azurecr.io/user
           imagePullPolicy: Always
           lifecycle:
             preStop:

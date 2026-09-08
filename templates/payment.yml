@@ -49,7 +49,7 @@ spec:
     spec:
       containers:
         - name: payment
-          image: roboshop0088.azurecr.io/cart/payment
+          image: roboshop0088.azurecr.io/payment
           imagePullPolicy: Always
           lifecycle:
             preStop:

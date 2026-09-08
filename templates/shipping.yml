@@ -50,7 +50,7 @@ spec:
     spec:
       containers:
         - name: shipping
-          image: roboshop0088.azurecr.io/cart/shipping
+          image: roboshop0088.azurecr.io/shipping
           imagePullPolicy: Always
           lifecycle:
             preStop:
@@ -107,7 +107,7 @@ spec:
       containers:
         - name: schema
           389841108590:
-          image: roboshop0088.azurecr.io/cart/shipping-db-image
+          image: roboshop0088.azurecr.io/shipping-db-image
           envFrom:
             - configMapRef:
                 name: shipping
