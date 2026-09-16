@@ -19,7 +19,7 @@ kind: Service
 metadata:
   name: frontend
 spec:
-  type: LoadBalancer
+#  type: LoadBalancer
   selector:
     project: roboshop
     app: frontend
@@ -65,7 +65,7 @@ spec:
               name: metrics
 
         - name: frontend
-          image: roboshop0088.azurecr.io/frontend
+          image: roboshop5427.azurecr.io/frontend
           imagePullPolicy: Always
           lifecycle:
             preStop:

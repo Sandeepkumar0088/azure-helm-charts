@@ -45,7 +45,7 @@ spec:
     spec:
       containers:
         - name: user
-          image: roboshop0088.azurecr.io/user
+          image: roboshop5427.azurecr.io/user
           imagePullPolicy: Always
           lifecycle:
             preStop:
