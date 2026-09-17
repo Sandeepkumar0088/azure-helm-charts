@@ -51,6 +51,7 @@ spec:
       containers:
         - name: shipping
           image: roboshop5427.azurecr.io/shipping
+          tag: latest
           imagePullPolicy: Always
           lifecycle:
             preStop:

@@ -46,6 +46,7 @@ spec:
       containers:
         - name: cart
           image: roboshop5427.azurecr.io/cart
+          tag: latest
           imagePullPolicy: Always
           lifecycle:
             preStop:
