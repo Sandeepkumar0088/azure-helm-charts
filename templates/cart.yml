@@ -45,7 +45,7 @@ spec:
     spec:
       containers:
         - name: cart
-          image: roboshop5427.azurecr.io/cart
+          image: roboshop5427.azurecr.io/cart:{{ .Values.image.tag }}
 #          tag: latest
           imagePullPolicy: Always
           lifecycle:
