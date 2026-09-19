@@ -45,7 +45,7 @@ spec:
     spec:
       containers:
         - name: user
-          image: roboshop5427.azurecr.io/user
+          image: roboshop5427.azurecr.io/user:{{ .Values.image.tag }}
 #          tag: latest
           imagePullPolicy: Always
           lifecycle:

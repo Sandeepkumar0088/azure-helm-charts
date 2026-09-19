@@ -50,7 +50,7 @@ spec:
     spec:
       containers:
         - name: shipping
-          image: roboshop5427.azurecr.io/shipping
+          image: roboshop5427.azurecr.io/shipping:{{ .Values.image.tag }}
 #          tag: latest
           imagePullPolicy: Always
           lifecycle:
@@ -123,7 +123,7 @@ spec:
     apiVersion: apps/v1
     kind: Deployment
     name: shipping
-  minReplicas: 2
+  minReplicas: 5
   maxReplicas: 10
   metrics:
     - type: Resource
