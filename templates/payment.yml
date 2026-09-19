@@ -50,7 +50,7 @@ spec:
       containers:
         - name: payment
           image: roboshop5427.azurecr.io/payment
-          tag: latest
+#          tag: latest
           imagePullPolicy: Always
           lifecycle:
             preStop:
