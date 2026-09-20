@@ -46,7 +46,6 @@ spec:
       containers:
         - name: user
           image: roboshop5427.azurecr.io/user
-          tag: latest
           imagePullPolicy: Always
           lifecycle:
             preStop:
