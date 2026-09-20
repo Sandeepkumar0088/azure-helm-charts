@@ -65,8 +65,8 @@ spec:
               name: metrics
 
         - name: frontend
-          image: roboshop5427.azurecr.io/frontend:{{ .Values.image.tag }}
-#          tag: latest
+          image: roboshop5427.azurecr.io/frontend
+          tag: latest
           imagePullPolicy: Always
           lifecycle:
             preStop:

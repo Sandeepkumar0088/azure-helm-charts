@@ -50,25 +50,13 @@ spec:
     spec:
       containers:
         - name: shipping
-          image: roboshop5427.azurecr.io/shipping:{{ .Values.image.tag }}
-#          tag: latest
+          image: roboshop5427.azurecr.io/shipping
+          tag: latest
           imagePullPolicy: Always
           lifecycle:
             preStop:
               exec:
                 command: [ "/bin/sh", "-c", "sleep 30" ]
-#          livenessProbe:
-#            httpGet:
-#              path: /health
-#              port: 8080
-#            failureThreshold: 1
-#            periodSeconds: 10
-#          readinessProbe:
-#            httpGet:
-#              path: /health
-#              port: 8080
-#            failureThreshold: 10
-#            periodSeconds: 10
           livenessProbe:
             httpGet:
               path: /health

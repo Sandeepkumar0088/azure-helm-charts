@@ -49,8 +49,8 @@ spec:
     spec:
       containers:
         - name: catalogue
-          image: roboshop5427.azurecr.io/catalogue:{{ .Values.image.tag }}
-#          tag: latest
+          image: roboshop5427.azurecr.io/catalogue
+          tag: latest
           imagePullPolicy: Always
           lifecycle:
             preStop:

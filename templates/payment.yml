@@ -49,8 +49,8 @@ spec:
     spec:
       containers:
         - name: payment
-          image: roboshop5427.azurecr.io/payment:{{ .Values.image.tag }}
-#          tag: latest
+          image: roboshop5427.azurecr.io/payment
+          tag: latest
           imagePullPolicy: Always
           lifecycle:
             preStop:
